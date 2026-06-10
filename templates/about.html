@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}About | Brain Tumor Classification{% endblock %}
+{% block content %}
+<section class="page">
+  <h1>About the Project</h1>
+  <p>This project follows a classic medical image classification workflow: image loading, preprocessing, feature extraction, supervised model training, model comparison, and web-based prediction.</p>
+  <div class="timeline">
+    <div><strong>1.</strong> Kaggle MRI images are organized into Tumor and No Tumor folders.</div>
+    <div><strong>2.</strong> Images are converted to grayscale, resized to 200x200, and normalized.</div>
+    <div><strong>3.</strong> Raw pixels, HOG, and LBP features are extracted.</div>
+    <div><strong>4.</strong> Six machine learning models are trained and evaluated on an 80/20 split.</div>
+    <div><strong>5.</strong> The best-performing model is saved with Pickle and used by Flask.</div>
+  </div>
+</section>
+{% endblock %}

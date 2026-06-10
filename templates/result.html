@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Result | Brain Tumor Classification{% endblock %}
+{% block content %}
+<section class="page result-layout">
+  <div>
+    <p class="eyebrow">Prediction Result</p>
+    <h1 class="{{ 'danger' if prediction == 'Tumor' else 'success' }}">{{ prediction }}</h1>
+    <p class="confidence">{{ "%.2f"|format(confidence) }}% confidence</p>
+    <p>Model: <strong>{{ model_name }}</strong> with <strong>{{ feature_method }}</strong> features.</p>
+    <div class="probabilities">
+      {% for label, value in probabilities.items() %}
+        <div>
+          <span>{{ label }}</span>
+          <strong>{{ "%.2f"|format(value) }}%</strong>
+          <meter min="0" max="100" value="{{ value }}"></meter>
+        </div>
+      {% endfor %}
+    </div>
+    <a class="button secondary" href="{{ url_for('predict') }}">Analyze Another Image</a>
+  </div>
+  <img class="scan" src="{{ image_url }}" alt="Uploaded MRI image">
+</section>
+{% endblock %}

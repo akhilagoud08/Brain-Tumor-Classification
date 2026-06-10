@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Abstract medical MRI background">
+  <rect width="1200" height="700" fill="#0b5960"/>
+  <g opacity="0.2" fill="none" stroke="#d4fffb" stroke-width="2">
+    <path d="M60 120h1080M60 240h1080M60 360h1080M60 480h1080M60 600h1080"/>
+    <path d="M120 60v580M300 60v580M480 60v580M660 60v580M840 60v580M1020 60v580"/>
+  </g>
+  <g transform="translate(760 95)">
+    <ellipse cx="180" cy="250" rx="150" ry="210" fill="#efffff" opacity="0.18"/>
+    <path d="M174 84c78 0 130 70 130 168 0 103-54 172-135 172-74 0-126-68-126-168C43 155 96 84 174 84z" fill="none" stroke="#e4fffb" stroke-width="16" opacity="0.42"/>
+    <path d="M180 105c-24 42-20 85 0 128s23 84-12 129" fill="none" stroke="#b8fffa" stroke-width="10" opacity="0.5"/>
+    <circle cx="216" cy="240" r="34" fill="#8ee7df" opacity="0.72"/>
+  </g>
+  <path d="M0 570c160-70 292-40 430-16 198 35 349 20 520-58 91-42 174-52 250-44v248H0z" fill="#063d45" opacity="0.45"/>
+</svg>

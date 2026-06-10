@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | Brain Tumor Classification{% endblock %}
+{% block content %}
+<section class="page">
+  <h1>Model Performance Dashboard</h1>
+  {% if metrics %}
+    <div class="metrics">
+      <div><span>Best Model</span><strong>{{ metrics.best_model.model_name }}</strong></div>
+      <div><span>Feature Method</span><strong>{{ metrics.best_model.feature_method|upper }}</strong></div>
+      <div><span>Accuracy</span><strong>{{ "%.2f"|format(metrics.best_model.accuracy * 100) }}%</strong></div>
+      <div><span>Precision</span><strong>{{ "%.2f"|format(metrics.best_model.precision * 100) }}%</strong></div>
+      <div><span>Sensitivity</span><strong>{{ "%.2f"|format(metrics.best_model.sensitivity_recall * 100) }}%</strong></div>
+      <div><span>Specificity</span><strong>{{ "%.2f"|format(metrics.best_model.specificity * 100) }}%</strong></div>
+    </div>
+    <div class="charts">
+      <img src="{{ url_for('static', filename='images/confusion_matrix.png') }}" alt="Confusion matrix">
+      <img src="{{ url_for('static', filename='images/roc_curve.png') }}" alt="ROC curve">
+    </div>
+    <h2>Best Model Classification Report</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1 Score</th>
+            <th>Support</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for label, values in metrics.best_model.classification_report.items() %}
+            {% if values is mapping %}
+              <tr>
+                <td>{{ label }}</td>
+                <td>{{ "%.3f"|format(values.precision) }}</td>
+                <td>{{ "%.3f"|format(values.recall) }}</td>
+                <td>{{ "%.3f"|format(values['f1-score']) }}</td>
+                <td>{{ values.support }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <h2>All Model Comparisons</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Features</th>
+            <th>Accuracy</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>Specificity</th>
+            <th>ROC AUC</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in metrics.all_results %}
+            <tr>
+              <td>{{ row.model_name }}</td>
+              <td>{{ row.feature_method|upper }}</td>
+              <td>{{ "%.3f"|format(row.accuracy) }}</td>
+              <td>{{ "%.3f"|format(row.precision) }}</td>
+              <td>{{ "%.3f"|format(row.sensitivity_recall) }}</td>
+              <td>{{ "%.3f"|format(row.specificity) }}</td>
+              <td>{{ "%.3f"|format(row.roc_auc) }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <p>No metrics found yet. Add the dataset and run <code>python train_model.py</code> to generate model results, ROC curve, and confusion matrix.</p>
+  {% endif %}
+</section>
+{% endblock %}

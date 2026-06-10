@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Home | Brain Tumor Classification{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Machine Learning MRI Analysis</p>
+    <h1>Brain Tumor Classification</h1>
+    <p>Upload a brain MRI image and classify it using the best model selected from SVM, Logistic Regression, KNN, Naive Bayes, Decision Tree, and Random Forest.</p>
+    <a class="button" href="{{ url_for('predict') }}">Upload MRI Image</a>
+  </div>
+</section>
+<section class="grid">
+  <article>
+    <h2>Preprocessing</h2>
+    <p>Every MRI is converted to grayscale, resized to 200x200 pixels, and normalized before feature extraction.</p>
+  </article>
+  <article>
+    <h2>Feature Methods</h2>
+    <p>The training script compares raw image pixels, Histogram of Oriented Gradients, and Local Binary Pattern features.</p>
+  </article>
+  <article>
+    <h2>Evaluation</h2>
+    <p>Accuracy, precision, sensitivity, specificity, confusion matrix, ROC curve, and classification report are generated.</p>
+  </article>
+</section>
+{% endblock %}

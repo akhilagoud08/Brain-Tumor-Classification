@@ -1,0 +1,688 @@
+{
+  "all_results": [
+    {
+      "feature_method": "raw",
+      "model_name": "SVM",
+      "accuracy": 0.8431372549019608,
+      "precision": 0.8709677419354839,
+      "sensitivity_recall": 0.8709677419354839,
+      "specificity": 0.8,
+      "roc_auc": 0.8887096774193548,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1-score": 0.8,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.8709677419354839,
+          "recall": 0.8709677419354839,
+          "f1-score": 0.8709677419354839,
+          "support": 31.0
+        },
+        "accuracy": 0.8431372549019608,
+        "macro avg": {
+          "precision": 0.8354838709677419,
+          "recall": 0.8354838709677419,
+          "f1-score": 0.8354838709677419,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8431372549019608,
+          "recall": 0.8431372549019608,
+          "f1-score": 0.8431372549019608,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "raw",
+      "model_name": "Logistic Regression",
+      "accuracy": 0.8431372549019608,
+      "precision": 0.8709677419354839,
+      "sensitivity_recall": 0.8709677419354839,
+      "specificity": 0.8,
+      "roc_auc": 0.8725806451612903,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1-score": 0.8,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.8709677419354839,
+          "recall": 0.8709677419354839,
+          "f1-score": 0.8709677419354839,
+          "support": 31.0
+        },
+        "accuracy": 0.8431372549019608,
+        "macro avg": {
+          "precision": 0.8354838709677419,
+          "recall": 0.8354838709677419,
+          "f1-score": 0.8354838709677419,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8431372549019608,
+          "recall": 0.8431372549019608,
+          "f1-score": 0.8431372549019608,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "raw",
+      "model_name": "KNN",
+      "accuracy": 0.7254901960784313,
+      "precision": 0.84,
+      "sensitivity_recall": 0.6774193548387096,
+      "specificity": 0.8,
+      "roc_auc": 0.8475806451612904,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.6153846153846154,
+          "recall": 0.8,
+          "f1-score": 0.6956521739130435,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.84,
+          "recall": 0.6774193548387096,
+          "f1-score": 0.75,
+          "support": 31.0
+        },
+        "accuracy": 0.7254901960784313,
+        "macro avg": {
+          "precision": 0.7276923076923076,
+          "recall": 0.7387096774193549,
+          "f1-score": 0.7228260869565217,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7519155354449472,
+          "recall": 0.7254901960784313,
+          "f1-score": 0.7286871270247229,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "raw",
+      "model_name": "Naive Bayes",
+      "accuracy": 0.6274509803921569,
+      "precision": 0.7727272727272727,
+      "sensitivity_recall": 0.5483870967741935,
+      "specificity": 0.75,
+      "roc_auc": 0.6491935483870968,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.5172413793103449,
+          "recall": 0.75,
+          "f1-score": 0.6122448979591837,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.7727272727272727,
+          "recall": 0.5483870967741935,
+          "f1-score": 0.6415094339622641,
+          "support": 31.0
+        },
+        "accuracy": 0.6274509803921569,
+        "macro avg": {
+          "precision": 0.6449843260188088,
+          "recall": 0.6491935483870968,
+          "f1-score": 0.626877165960724,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.6725367262892618,
+          "recall": 0.6274509803921569,
+          "f1-score": 0.6300331453336052,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "raw",
+      "model_name": "Decision Tree",
+      "accuracy": 0.7450980392156863,
+      "precision": 0.8,
+      "sensitivity_recall": 0.7741935483870968,
+      "specificity": 0.7,
+      "roc_auc": 0.7370967741935484,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7,
+          "f1-score": 0.6829268292682927,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.8,
+          "recall": 0.7741935483870968,
+          "f1-score": 0.7868852459016393,
+          "support": 31.0
+        },
+        "accuracy": 0.7450980392156863,
+        "macro avg": {
+          "precision": 0.7333333333333334,
+          "recall": 0.7370967741935484,
+          "f1-score": 0.7349060375849661,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7477124183006536,
+          "recall": 0.7450980392156863,
+          "f1-score": 0.7461172393787583,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "raw",
+      "model_name": "Random Forest",
+      "accuracy": 0.8431372549019608,
+      "precision": 0.8484848484848485,
+      "sensitivity_recall": 0.9032258064516129,
+      "specificity": 0.75,
+      "roc_auc": 0.9032258064516129,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8333333333333334,
+          "recall": 0.75,
+          "f1-score": 0.7894736842105263,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.8484848484848485,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.875,
+          "support": 31.0
+        },
+        "accuracy": 0.8431372549019608,
+        "macro avg": {
+          "precision": 0.8409090909090909,
+          "recall": 0.8266129032258065,
+          "f1-score": 0.8322368421052632,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8425430778371955,
+          "recall": 0.8431372549019608,
+          "f1-score": 0.8414602683178535,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "hog",
+      "model_name": "SVM",
+      "accuracy": 0.8627450980392157,
+      "precision": 0.875,
+      "sensitivity_recall": 0.9032258064516129,
+      "specificity": 0.8,
+      "roc_auc": 0.9532258064516128,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8421052631578947,
+          "recall": 0.8,
+          "f1-score": 0.8205128205128205,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.875,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.8888888888888888,
+          "support": 31.0
+        },
+        "accuracy": 0.8627450980392157,
+        "macro avg": {
+          "precision": 0.8585526315789473,
+          "recall": 0.8516129032258064,
+          "f1-score": 0.8547008547008547,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8621001031991743,
+          "recall": 0.8627450980392157,
+          "f1-score": 0.8620747444276856,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "hog",
+      "model_name": "Logistic Regression",
+      "accuracy": 0.8823529411764706,
+      "precision": 0.9032258064516129,
+      "sensitivity_recall": 0.9032258064516129,
+      "specificity": 0.85,
+      "roc_auc": 0.9661290322580646,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.85,
+          "recall": 0.85,
+          "f1-score": 0.85,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.9032258064516129,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.9032258064516129,
+          "support": 31.0
+        },
+        "accuracy": 0.8823529411764706,
+        "macro avg": {
+          "precision": 0.8766129032258064,
+          "recall": 0.8766129032258064,
+          "f1-score": 0.8766129032258064,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8823529411764706,
+          "f1-score": 0.8823529411764706,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "hog",
+      "model_name": "KNN",
+      "accuracy": 0.8627450980392157,
+      "precision": 0.9,
+      "sensitivity_recall": 0.8709677419354839,
+      "specificity": 0.85,
+      "roc_auc": 0.9483870967741935,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8095238095238095,
+          "recall": 0.85,
+          "f1-score": 0.8292682926829268,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.9,
+          "recall": 0.8709677419354839,
+          "f1-score": 0.8852459016393442,
+          "support": 31.0
+        },
+        "accuracy": 0.8627450980392157,
+        "macro avg": {
+          "precision": 0.8547619047619048,
+          "recall": 0.8604838709677419,
+          "f1-score": 0.8572570971611355,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8645191409897294,
+          "recall": 0.8627450980392157,
+          "f1-score": 0.8632938981270237,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "hog",
+      "model_name": "Naive Bayes",
+      "accuracy": 0.803921568627451,
+      "precision": 0.8387096774193549,
+      "sensitivity_recall": 0.8387096774193549,
+      "specificity": 0.75,
+      "roc_auc": 0.8032258064516129,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1-score": 0.75,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.8387096774193549,
+          "recall": 0.8387096774193549,
+          "f1-score": 0.8387096774193549,
+          "support": 31.0
+        },
+        "accuracy": 0.803921568627451,
+        "macro avg": {
+          "precision": 0.7943548387096775,
+          "recall": 0.7943548387096775,
+          "f1-score": 0.7943548387096775,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.803921568627451,
+          "recall": 0.803921568627451,
+          "f1-score": 0.803921568627451,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "hog",
+      "model_name": "Decision Tree",
+      "accuracy": 0.7450980392156863,
+      "precision": 0.875,
+      "sensitivity_recall": 0.6774193548387096,
+      "specificity": 0.85,
+      "roc_auc": 0.7637096774193547,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.6296296296296297,
+          "recall": 0.85,
+          "f1-score": 0.723404255319149,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.875,
+          "recall": 0.6774193548387096,
+          "f1-score": 0.7636363636363637,
+          "support": 31.0
+        },
+        "accuracy": 0.7450980392156863,
+        "macro avg": {
+          "precision": 0.7523148148148149,
+          "recall": 0.7637096774193548,
+          "f1-score": 0.7435203094777563,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7787763253449529,
+          "recall": 0.7450980392156863,
+          "f1-score": 0.7478590662570638,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "hog",
+      "model_name": "Random Forest",
+      "accuracy": 0.8823529411764706,
+      "precision": 0.9032258064516129,
+      "sensitivity_recall": 0.9032258064516129,
+      "specificity": 0.85,
+      "roc_auc": 0.9604838709677419,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.85,
+          "recall": 0.85,
+          "f1-score": 0.85,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.9032258064516129,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.9032258064516129,
+          "support": 31.0
+        },
+        "accuracy": 0.8823529411764706,
+        "macro avg": {
+          "precision": 0.8766129032258064,
+          "recall": 0.8766129032258064,
+          "f1-score": 0.8766129032258064,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8823529411764706,
+          "recall": 0.8823529411764706,
+          "f1-score": 0.8823529411764706,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "lbp",
+      "model_name": "SVM",
+      "accuracy": 0.7843137254901961,
+      "precision": 0.7777777777777778,
+      "sensitivity_recall": 0.9032258064516129,
+      "specificity": 0.6,
+      "roc_auc": 0.8564516129032258,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8,
+          "recall": 0.6,
+          "f1-score": 0.6857142857142857,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.7777777777777778,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.835820895522388,
+          "support": 31.0
+        },
+        "accuracy": 0.7843137254901961,
+        "macro avg": {
+          "precision": 0.788888888888889,
+          "recall": 0.7516129032258064,
+          "f1-score": 0.7607675906183369,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7864923747276689,
+          "recall": 0.7843137254901961,
+          "f1-score": 0.7769555583427401,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "lbp",
+      "model_name": "Logistic Regression",
+      "accuracy": 0.803921568627451,
+      "precision": 0.8620689655172413,
+      "sensitivity_recall": 0.8064516129032258,
+      "specificity": 0.8,
+      "roc_auc": 0.8306451612903225,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.7272727272727273,
+          "recall": 0.8,
+          "f1-score": 0.7619047619047619,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.8620689655172413,
+          "recall": 0.8064516129032258,
+          "f1-score": 0.8333333333333334,
+          "support": 31.0
+        },
+        "accuracy": 0.803921568627451,
+        "macro avg": {
+          "precision": 0.7946708463949843,
+          "recall": 0.8032258064516129,
+          "f1-score": 0.7976190476190477,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.8092076956174319,
+          "recall": 0.803921568627451,
+          "f1-score": 0.8053221288515405,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "lbp",
+      "model_name": "KNN",
+      "accuracy": 0.7647058823529411,
+      "precision": 0.7435897435897436,
+      "sensitivity_recall": 0.9354838709677419,
+      "specificity": 0.5,
+      "roc_auc": 0.7959677419354838,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8333333333333334,
+          "recall": 0.5,
+          "f1-score": 0.625,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.7435897435897436,
+          "recall": 0.9354838709677419,
+          "f1-score": 0.8285714285714286,
+          "support": 31.0
+        },
+        "accuracy": 0.7647058823529411,
+        "macro avg": {
+          "precision": 0.7884615384615385,
+          "recall": 0.717741935483871,
+          "f1-score": 0.7267857142857144,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7787833081950728,
+          "recall": 0.7647058823529411,
+          "f1-score": 0.7487394957983193,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "lbp",
+      "model_name": "Naive Bayes",
+      "accuracy": 0.7058823529411765,
+      "precision": 0.7352941176470589,
+      "sensitivity_recall": 0.8064516129032258,
+      "specificity": 0.55,
+      "roc_auc": 0.7725806451612904,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.6470588235294118,
+          "recall": 0.55,
+          "f1-score": 0.5945945945945946,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.7352941176470589,
+          "recall": 0.8064516129032258,
+          "f1-score": 0.7692307692307693,
+          "support": 31.0
+        },
+        "accuracy": 0.7058823529411765,
+        "macro avg": {
+          "precision": 0.6911764705882353,
+          "recall": 0.6782258064516129,
+          "f1-score": 0.681912681912682,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7006920415224913,
+          "recall": 0.7058823529411765,
+          "f1-score": 0.700745994863642,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "lbp",
+      "model_name": "Decision Tree",
+      "accuracy": 0.7058823529411765,
+      "precision": 0.7666666666666667,
+      "sensitivity_recall": 0.7419354838709677,
+      "specificity": 0.65,
+      "roc_auc": 0.6959677419354839,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.6190476190476191,
+          "recall": 0.65,
+          "f1-score": 0.6341463414634146,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.7666666666666667,
+          "recall": 0.7419354838709677,
+          "f1-score": 0.7540983606557377,
+          "support": 31.0
+        },
+        "accuracy": 0.7058823529411765,
+        "macro avg": {
+          "precision": 0.6928571428571428,
+          "recall": 0.6959677419354839,
+          "f1-score": 0.6941223510595762,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7087768440709619,
+          "recall": 0.7058823529411765,
+          "f1-score": 0.7070583531293364,
+          "support": 51.0
+        }
+      }
+    },
+    {
+      "feature_method": "lbp",
+      "model_name": "Random Forest",
+      "accuracy": 0.7843137254901961,
+      "precision": 0.7777777777777778,
+      "sensitivity_recall": 0.9032258064516129,
+      "specificity": 0.6,
+      "roc_auc": 0.8959677419354839,
+      "classification_report": {
+        "No Tumor": {
+          "precision": 0.8,
+          "recall": 0.6,
+          "f1-score": 0.6857142857142857,
+          "support": 20.0
+        },
+        "Tumor": {
+          "precision": 0.7777777777777778,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.835820895522388,
+          "support": 31.0
+        },
+        "accuracy": 0.7843137254901961,
+        "macro avg": {
+          "precision": 0.788888888888889,
+          "recall": 0.7516129032258064,
+          "f1-score": 0.7607675906183369,
+          "support": 51.0
+        },
+        "weighted avg": {
+          "precision": 0.7864923747276689,
+          "recall": 0.7843137254901961,
+          "f1-score": 0.7769555583427401,
+          "support": 51.0
+        }
+      }
+    }
+  ],
+  "best_model": {
+    "feature_method": "hog",
+    "model_name": "Logistic Regression",
+    "accuracy": 0.8823529411764706,
+    "precision": 0.9032258064516129,
+    "sensitivity_recall": 0.9032258064516129,
+    "specificity": 0.85,
+    "roc_auc": 0.9661290322580646,
+    "classification_report": {
+      "No Tumor": {
+        "precision": 0.85,
+        "recall": 0.85,
+        "f1-score": 0.85,
+        "support": 20.0
+      },
+      "Tumor": {
+        "precision": 0.9032258064516129,
+        "recall": 0.9032258064516129,
+        "f1-score": 0.9032258064516129,
+        "support": 31.0
+      },
+      "accuracy": 0.8823529411764706,
+      "macro avg": {
+        "precision": 0.8766129032258064,
+        "recall": 0.8766129032258064,
+        "f1-score": 0.8766129032258064,
+        "support": 51.0
+      },
+      "weighted avg": {
+        "precision": 0.8823529411764706,
+        "recall": 0.8823529411764706,
+        "f1-score": 0.8823529411764706,
+        "support": 51.0
+      }
+    }
+  }
+}
