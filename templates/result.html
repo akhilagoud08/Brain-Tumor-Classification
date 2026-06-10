@@ -1,23 +1,102 @@
-{% extends "base.html" %}
-{% block title %}Result | Brain Tumor Classification{% endblock %}
-{% block content %}
-<section class="page result-layout">
-  <div>
-    <p class="eyebrow">Prediction Result</p>
-    <h1 class="{{ 'danger' if prediction == 'Tumor' else 'success' }}">{{ prediction }}</h1>
-    <p class="confidence">{{ "%.2f"|format(confidence) }}% confidence</p>
-    <p>Model: <strong>{{ model_name }}</strong> with <strong>{{ feature_method }}</strong> features.</p>
-    <div class="probabilities">
-      {% for label, value in probabilities.items() %}
-        <div>
-          <span>{{ label }}</span>
-          <strong>{{ "%.2f"|format(value) }}%</strong>
-          <meter min="0" max="100" value="{{ value }}"></meter>
-        </div>
-      {% endfor %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Prediction Result</title>
+
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+```
+
+</head>
+
+<body class="container mt-4">
+
+```
+<h1 class="mb-4">Prediction Result</h1>
+
+<div class="mb-3">
+
+    <a href="/" class="btn btn-primary">
+        Home
+    </a>
+
+    <a href="/history" class="btn btn-success">
+        History
+    </a>
+
+    <a href="/dashboard" class="btn btn-warning">
+        Dashboard
+    </a>
+
+    <a href="/explain" class="btn btn-info">
+        Explainability
+    </a>
+
+</div>
+
+<div class="card p-4 shadow">
+
+    <h3>Uploaded MRI Image</h3>
+
+    <img src="{{ url_for('static', filename='uploads/' + image) }}"
+         width="350"
+         class="img-thumbnail">
+
+    <hr>
+
+    {% if prediction == "Tumor" %}
+    <h2 class="text-danger">
+    Prediction: {{ prediction }}
+    </h2>
+    {% else %}
+    <h2 class="text-success">
+    Prediction: {{ prediction }}
+    </h2>
+    {% endif %}
+
+    <h4>
+        Confidence Score:
+        {{ confidence }}%
+    </h4>
+
+    <p>
+        Algorithm Used:
+        <strong>Random Forest</strong>
+    </p>
+
+    <a href="/report/{{ prediction }}/{{ confidence }}"
+       class="btn btn-danger">
+        Download PDF Report
+    </a>
+
+    <hr>
+
+    {% if show_heatmap %}
+
+    <h3>Explainable AI Visualization</h3>
+
+    <span class="badge bg-info mb-3">
+        Explainable AI
+    </span>
+
+    <div class="alert alert-info mt-2">
+        This visualization demonstrates the regions of an MRI scan
+        that may influence the machine learning model's prediction.
     </div>
-    <a class="button secondary" href="{{ url_for('predict') }}">Analyze Another Image</a>
-  </div>
-  <img class="scan" src="{{ image_url }}" alt="Uploaded MRI image">
-</section>
-{% endblock %}
+    <p class="mt-3">
+        The highlighted region represents the area that may contain important visual patterns used by the machine learning model during prediction.
+    </p>
+
+    <img src="{{ url_for('static', filename='explanations/heatmap.png') }}"
+        width="500"
+        class="img-thumbnail">
+
+{% endif %}
+
+</div>
+```
+
+</body>
+</html>
+
