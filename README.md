@@ -13,13 +13,14 @@ The project also includes prediction history storage, model comparison dashboard
 * MRI image upload and classification
 * Brain Tumor / No Tumor prediction
 * Prediction confidence score
-* Random Forest Machine Learning model
+* Compared SVM, Logistic Regression, K-Nearest Neighbors (KNN), and Random Forest models
+* Selected Random Forest as the final deployed classifier based on performance evaluation
+* Accuracy, Precision, Recall, and F1-Score comparison dashboard
 * Prediction history using SQLite database
-* Dashboard for model comparison
-* Accuracy, Precision, Recall, and F1-Score comparison
 * PDF report generation
 * Explainability page with heatmap visualization
 * Bootstrap-based responsive user interface
+* Cloud deployment using Render
 
 ---
 
