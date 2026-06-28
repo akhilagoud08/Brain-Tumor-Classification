@@ -147,6 +147,6 @@ The project includes an Explainability module demonstrating how important MRI re
 
 ---
 
-## Disclaimer
+## Disclaismer
 
 This project is developed for educational and research purposes only. It is not intended for medical diagnosis or clinical decision-making.
